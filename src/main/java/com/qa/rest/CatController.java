@@ -8,10 +8,18 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/cat") //declaring API endpoint
 public class CatController {
 
+	//GET
+	//URL localhost/cat/helloWorld - invokes the helloWorld method within web browser/postman
 	@GetMapping("/helloWorld")
 	public String helloWolrd() {
-		return "Hello world"; //if someone goes to localhost/cat/helloWorld - it will display that
+		return "Hello world"; 		
 	}
+	
+	//POST
+	
+	//PUT
+	
+	//DELETE
 	
 	
 }
