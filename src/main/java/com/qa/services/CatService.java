@@ -47,4 +47,16 @@ public class CatService {
 		return resultList;
 	}
 	
+	//GET (READ specific)
+	public CatDTO readOne(Long id) {
+	return mapToDTO(this.repo.findById(id).orElseThrow()); //error handling
+	}
+	
+	//DELETE
+	public boolean delete(Long id) {
+		this.repo.deleteById(id);
+		return !this.repo.existsById(id);
+	}
+	
 }
+	

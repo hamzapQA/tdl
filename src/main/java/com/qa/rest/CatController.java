@@ -41,7 +41,6 @@ public class CatController {
 	}
 	
 	//GET - Read all 
-	
 	@GetMapping("/readAll")
 	public ResponseEntity<List<CatDTO>> readAll() {
 		return ResponseEntity.ok(this.service.readAll());
@@ -50,10 +49,10 @@ public class CatController {
 	
 	//GET (Read by ID)
 	@GetMapping("/read/{id}")
-	public CatDomain readCat(@PathVariable("id") Long id) {
-		return null;
+	public ResponseEntity <CatDTO> readCat(@PathVariable("id") Long id) {
+		return ResponseEntity.ok(this.service.readOne(id));
 	}
-	
+
 	//POST (CREATE)
 	@PostMapping("/create")
 	public ResponseEntity<CatDTO> create(@RequestBody CatDomain cat) {
@@ -68,8 +67,11 @@ public class CatController {
 
 	//DELETE
 	@DeleteMapping("/delete/{id}")
-	public boolean update(@PathVariable("id") Long id) {
-		return false;
+	public ResponseEntity<Object> delete(@PathVariable("id")Long id) {
+		return this.service.delete(id) ?
+				new ResponseEntity<>(HttpStatus.NO_CONTENT) :
+				new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+					
 	}
 	
 }
