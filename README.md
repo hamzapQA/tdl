@@ -21,7 +21,7 @@ This is a step by step guide on how to get the project up and running on your lo
 1. Navigate to the folder in which you would like to set up the project.
 
 ```
-git clone https://github.com/hamzapQA/ims-demo.git
+https://github.com/hamzapQA/tdl-back
 ```
 
 3. Import the project into your IDE. For Eclipse, 
