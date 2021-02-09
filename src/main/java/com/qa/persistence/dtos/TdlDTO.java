@@ -42,6 +42,14 @@ public class TdlDTO {
 	public void setEffortLevel(float effortLevel) {
 		this.effortLevel = effortLevel;
 	}
+
+	public int getPriority() {
+		return priority;
+	}
+
+	public void setPriority(int priority) {
+		this.priority = priority;
+	}
 	
 	
 	
