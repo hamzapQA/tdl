@@ -24,7 +24,7 @@ public class TdlDomain {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-
+//
 	//All Args - "Generate Constructor Using Fields"
 	//METHODS
 	
