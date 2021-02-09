@@ -35,10 +35,10 @@ public class CatController {
 
 	//GET
 	//URL http://localhost:8080/cat/helloWorld - invokes the helloWorld method within web browser/postman
-	@GetMapping("/helloWorld")
-	public String helloWorld() {
-		return "Hello world"; 		
-	}
+	//@GetMapping("/helloWorld")
+	//public String helloWorld() {
+	//	return "Hello world"; 		
+	//}
 	
 	//GET - Read all 
 	@GetMapping("/readAll")
