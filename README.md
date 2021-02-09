@@ -80,7 +80,7 @@ Integration Tests make use of Mockito and aure used to test functionality of cla
 
 ## Deployment
 
-To deploy this project on a live system, you can use the included jar file "HamzaIMS-0.0.1-SNAPSHOT-jar-with-dependencies.jar".
+To deploy this project on a live system
 
 ## Built With
 
