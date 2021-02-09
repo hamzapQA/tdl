@@ -24,7 +24,7 @@ public class TdlController {
 
 	private TdlService service;
 	
-//referencing CatService entity in repo, creating constructor
+//referencing TdlService entity in repo, creating constructor
 	
 	@Autowired //used for constructor, passed to CatService for bean to be generated
 	public TdlController(TdlService service) { //dependency injection, parameter must be passed 
