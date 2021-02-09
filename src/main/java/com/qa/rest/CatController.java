@@ -60,10 +60,10 @@ public class CatController {
 	}																					 //this gives code 201 instead of the generic 200
 	
 	//PUT (UPDATE)
-	@PutMapping("update/{id}")
-	public boolean update(@PathVariable("id") Long id, @RequestBody CatDomain cat) {
-		return false;
-	}
+			@PutMapping("update/{id}")
+			public ResponseEntity<CatDTO> update(@PathVariable("id") Long id, @RequestBody CatDomain cat) {
+				return new ResponseEntity<CatDTO>(this.service.update(id, cat), HttpStatus.ACCEPTED);
+			}
 
 	//DELETE
 	@DeleteMapping("/delete/{id}")

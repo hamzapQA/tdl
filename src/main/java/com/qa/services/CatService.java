@@ -5,6 +5,8 @@ import java.util.stream.Collectors;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -51,6 +53,14 @@ public class CatService {
 	public CatDTO readOne(Long id) {
 	return mapToDTO(this.repo.findById(id).orElseThrow()); //error handling
 	}
+	
+	//PUT
+		public CatDTO update(Long id, CatDomain newDetails) {
+			this.repo.findById(id).orElseThrow();
+			
+			newDetails.setId(id);
+			return this.mapToDTO(this.repo.save(newDetails));
+		}
 	
 	//DELETE
 	public boolean delete(Long id) {
