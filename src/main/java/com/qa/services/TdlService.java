@@ -38,8 +38,8 @@ public class TdlService {
 	}
 		
 	//POST (CREATE)
-	public TdlDTO create(TdlDomain cat) {
-		return this.mapToDTO(this.repo.save(cat));
+	public TdlDTO create(TdlDomain item) {
+		return this.mapToDTO(this.repo.save(item));
 	}
 	
 	//GET (READ)

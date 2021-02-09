@@ -13,8 +13,8 @@ public class TdlDomain {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)   ///id is FK in SQL structure, this tells Spring the id is auto-gen
 	private Long id;
 	private String task;
-	private int age;
-	private float speechVolume;
+	private int priority;
+	private float effortLevel;
 	
 	//alt + shift + s
 	//CONSTRUCTOR
@@ -28,12 +28,12 @@ public class TdlDomain {
 	//All Args - "Generate Constructor Using Fields"
 	//METHODS
 	
-	public TdlDomain(Long id, String name, int age, float speechVolume) {
+	public TdlDomain(Long id, String task, int priority, float effortLevel) {
 		super();
 		this.id = id;
-		this.task = name;
-		this.age = age;
-		this.speechVolume = speechVolume;
+		this.task = task;
+		this.priority = priority;
+		this.effortLevel = effortLevel;
 	}
 
 
@@ -46,28 +46,28 @@ public class TdlDomain {
 		this.id = id;
 	}
 
-	public String getName() {
+	public String getTask() {
 		return task;
 	}
 
-	public void setName(String name) {
-		this.task = name;
+	public void setTask(String task) {
+		this.task = task;
 	}
 
-	public int getAge() {
-		return age;
+	public int getPriority() {
+		return priority;
 	}
 
-	public void setAge(int age) {
-		this.age = age;
+	public void setPriority(int age) {
+		this.priority = age;
 	}
 
-	public float getSpeechVolume() {
-		return speechVolume;
+	public float getEffortLevel() {
+		return effortLevel;
 	}
 
-	public void setSpeechVolume(float speechVolume) {
-		this.speechVolume = speechVolume;
+	public void setEffortLevel(float effortLevel) {
+		this.effortLevel = effortLevel;
 	}
 	
 

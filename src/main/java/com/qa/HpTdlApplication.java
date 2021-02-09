@@ -12,8 +12,8 @@ public class HpTdlApplication {
 		// ctrl + shift + o - optimises imports
 		ApplicationContext beanbag = SpringApplication.run(HpTdlApplication.class, args);
 		
-		System.out.println(beanbag.getBean("Welcome to TDL Application", String.class));
-		System.out.println(beanbag.getBean("serverStart", String.class));
+		System.out.println(beanbag.getBean("tdlGreeting", String.class));
+		System.out.println("Server started at " + (beanbag.getBean("serverStart", String.class)));
+		System.out.println("API endpoint information at " + (beanbag.getBean("serverInfo", String.class)));
 	}	
 }
-//

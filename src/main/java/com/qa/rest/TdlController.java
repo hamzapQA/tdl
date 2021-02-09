@@ -36,7 +36,7 @@ public class TdlController {
 	//URL http://localhost:8080/cat/helloWorld - invokes the helloWorld method within web browser/postman
 	//@GetMapping("/helloWorld")
 	//public String helloWorld() {
-	//	return "Hello world"; 		
+	//	return "Hello World!"; 		
 	//}
 	
 	//GET - Read all 
@@ -54,14 +54,14 @@ public class TdlController {
 
 	//POST (CREATE)
 	@PostMapping("/create")
-	public ResponseEntity<TdlDTO> createItem(@RequestBody TdlDomain item) {
-		return new ResponseEntity<TdlDTO>(this.service.create(item), HttpStatus.CREATED); //changing the HTTP response code
+	public ResponseEntity<TdlDTO> createItem(@RequestBody TdlDomain task) {
+		return new ResponseEntity<TdlDTO>(this.service.create(task), HttpStatus.CREATED); //changing the HTTP response code
 	}																					 //this gives code 201 instead of the generic 200
 	
 	//PUT (UPDATE)
 			@PutMapping("update/{id}")
-			public ResponseEntity<TdlDTO> updateItem(@PathVariable("id") Long id, @RequestBody TdlDomain item) {
-				return new ResponseEntity<TdlDTO>(this.service.update(id, item), HttpStatus.ACCEPTED);
+			public ResponseEntity<TdlDTO> updateItem(@PathVariable("id") Long id, @RequestBody TdlDomain task) {
+				return new ResponseEntity<TdlDTO>(this.service.update(id, task), HttpStatus.ACCEPTED);
 			}
 
 	//DELETE

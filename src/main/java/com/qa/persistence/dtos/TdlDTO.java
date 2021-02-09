@@ -3,44 +3,44 @@ package com.qa.persistence.dtos;
 //In this example, "age" is not returned as there are no getters and setters
 public class TdlDTO {
 	private Long id;
-	private String name;
-	private int age;
-	private float speechVolume;
+	private String task;
+	private int priority;
+	private float effortLevel;
 	
 	public TdlDTO() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public TdlDTO(Long id, String name, float speechVolume) {
+	public TdlDTO(Long id, String task, float effortLevel) {
 		super();
 		this.id = id;
-		this.name = name;
-		this.speechVolume = speechVolume;
+		this.task = task;
+		this.effortLevel = effortLevel;
 	}
 
 	public Long getId() {
 		return id;
 	}
-//
+
 	public void setId(Long id) {
 		this.id = id;
 	}
 
-	public String getName() {
-		return name;
+	public String getTask() {
+		return task;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setTask(String task) {
+		this.task = task;
 	}
 
-	public float getSpeechVolume() {
-		return speechVolume;
+	public float getEffortLevel() {
+		return effortLevel;
 	}
 
-	public void setSpeechVolume(float speechVolume) {
-		this.speechVolume = speechVolume;
+	public void setEffortLevel(float effortLevel) {
+		this.effortLevel = effortLevel;
 	}
 	
 	

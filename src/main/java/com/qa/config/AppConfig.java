@@ -12,8 +12,13 @@ import org.springframework.context.annotation.Configuration;
 public class AppConfig {
 
 	@Bean
-	public String helloWorld() {
-		return "Hello World";
+	public String tdlGreeting() {
+		return "Welcome to TDL!";
+	}
+	
+	@Bean
+	public String serverInfo() {
+		return "http://localhost:8080/swagger-ui/index.html";
 	}
 
 	@Bean
