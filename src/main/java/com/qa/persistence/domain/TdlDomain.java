@@ -7,12 +7,12 @@ import javax.persistence.Id;
 
 @Entity
 //alt shift r allows you to refactor efficiently
-public class CatDomain {
+public class TdlDomain {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)   ///id is FK in SQL structure, this tells Spring the id is auto-gen
 	private Long id;
-	private String name;
+	private String task;
 	private int age;
 	private float speechVolume;
 	
@@ -20,7 +20,7 @@ public class CatDomain {
 	//CONSTRUCTOR
 	//No Args - "Generate Constructor from Superclass"
 	
-	public CatDomain() {
+	public TdlDomain() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
@@ -28,10 +28,10 @@ public class CatDomain {
 	//All Args - "Generate Constructor Using Fields"
 	//METHODS
 	
-	public CatDomain(Long id, String name, int age, float speechVolume) {
+	public TdlDomain(Long id, String name, int age, float speechVolume) {
 		super();
 		this.id = id;
-		this.name = name;
+		this.task = name;
 		this.age = age;
 		this.speechVolume = speechVolume;
 	}
@@ -47,11 +47,11 @@ public class CatDomain {
 	}
 
 	public String getName() {
-		return name;
+		return task;
 	}
 
 	public void setName(String name) {
-		this.name = name;
+		this.task = name;
 	}
 
 	public int getAge() {

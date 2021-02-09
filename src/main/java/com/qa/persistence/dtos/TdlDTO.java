@@ -1,18 +1,18 @@
 package com.qa.persistence.dtos;
 //DTO allows you to manipulate which objects you wish to return from the entity domain
 //In this example, "age" is not returned as there are no getters and setters
-public class CatDTO {
+public class TdlDTO {
 	private Long id;
 	private String name;
 	private int age;
 	private float speechVolume;
 	
-	public CatDTO() {
+	public TdlDTO() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public CatDTO(Long id, String name, float speechVolume) {
+	public TdlDTO(Long id, String name, float speechVolume) {
 		super();
 		this.id = id;
 		this.name = name;

@@ -16,46 +16,46 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.context.request.DestructionCallbackBindingListener;
 
-import com.qa.persistence.domain.CatDomain;
-import com.qa.persistence.dtos.CatDTO;
-import com.qa.persistence.repos.CatRepo;
+import com.qa.persistence.domain.TdlDomain;
+import com.qa.persistence.dtos.TdlDTO;
+import com.qa.persistence.repos.TdlRepo;
 //this method is designed to use the cat controller 
 @Service
-public class CatService {
+public class TdlService {
 
-	private CatRepo repo;
+	private TdlRepo repo;
 	private ModelMapper mapper;
 	
 	@Autowired
-	public CatService(CatRepo repo, ModelMapper mapper) {
+	public TdlService(TdlRepo repo, ModelMapper mapper) {
 		super();
 		this.repo = repo;
 		this.mapper = mapper;
 	}
 	
-	private CatDTO mapToDTO(CatDomain model) {
-		return this.mapper.map(model, CatDTO.class);
+	private TdlDTO mapToDTO(TdlDomain model) {
+		return this.mapper.map(model, TdlDTO.class);
 	}
 		
 	//POST (CREATE)
-	public CatDTO create(CatDomain cat) {
+	public TdlDTO create(TdlDomain cat) {
 		return this.mapToDTO(this.repo.save(cat));
 	}
 	
 	//GET (READ)
-	public List<CatDTO> readAll() {
-		List<CatDomain> dbList = this.repo.findAll();
-		List<CatDTO> resultList = dbList.stream().map(this::mapToDTO).collect(Collectors.toList());
+	public List<TdlDTO> readAll() {
+		List<TdlDomain> dbList = this.repo.findAll();
+		List<TdlDTO> resultList = dbList.stream().map(this::mapToDTO).collect(Collectors.toList());
 		return resultList;
 	}
 	
 	//GET (READ specific)
-	public CatDTO readOne(Long id) {
+	public TdlDTO readOne(Long id) {
 	return mapToDTO(this.repo.findById(id).orElseThrow()); //error handling
 	}
 	
 	//PUT
-		public CatDTO update(Long id, CatDomain newDetails) {
+		public TdlDTO update(Long id, TdlDomain newDetails) {
 			this.repo.findById(id).orElseThrow();
 			
 			newDetails.setId(id);
