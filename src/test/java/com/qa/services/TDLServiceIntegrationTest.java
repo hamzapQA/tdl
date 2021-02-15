@@ -21,7 +21,7 @@ import com.qa.persistence.repos.TDLRepo;
 
 
 @SpringBootTest
-public class TDLServiceTest {
+public class TDLServiceIntegrationTest {
 	
 	@MockBean
 	private ModelMapper mockedMapper;

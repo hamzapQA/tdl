@@ -7,7 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 //unit test
 @SpringBootTest
-public class TDLDomainTest {
+public class TDLDomainUnitTest {
 	
 	private TDLDomain toDo;
 	
