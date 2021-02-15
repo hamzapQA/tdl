@@ -4,7 +4,7 @@ The following was discovered as part of building this project:
 * The original package name 'com.qa ' is invalid and this project uses 'com.qa' instead.
 
 # Getting Started
-
+//
 ### Reference Documentation
 For further reference, please consider the following sections:
 
