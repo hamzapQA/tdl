@@ -12,7 +12,8 @@
 	<artifactId>HP-TDL</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>HP-TDL</name>
-	<description>Demo project for Spring Boot</description>
+	<description>TDL Applicationt</description>
+	<packaging>war</packaging>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
