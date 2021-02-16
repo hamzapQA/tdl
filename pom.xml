@@ -12,7 +12,7 @@
 	<artifactId>HP-TDL</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>HP-TDL</name>
-	<description>TDL Applicationt</description>
+	<description>TDL Application</description>
 	<packaging>war</packaging>
 	<properties>
 		<java.version>11</java.version>
