@@ -1,4 +1,4 @@
-com\qa\seleniumTesting\tdlTesting\TDLSeleniumTesting.class
-com\qa\services\TDLServiceIntegrationTest.class
-com\qa\HpTdlApplicationTests.class
-com\qa\persistence\domain\TDLDomainUnitTest.class
+com/qa/seleniumTesting/tdlTesting/TDLSeleniumTesting.class
+com/qa/persistence/domain/TDLDomainUnitTest.class
+com/qa/HpTdlApplicationTests.class
+com/qa/services/TDLServiceIntegrationTest.class
