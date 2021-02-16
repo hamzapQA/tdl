@@ -24,55 +24,52 @@ In order to succesfully execute this program, there are a number of dependencies
 4. Bootstrap 5
 
 ```
-
 ### Installing
 
 This is a step by step guide on how to get the project up and running on your local machine for development and testing. 
 
-1. Visit the following link and click "Download":
-
+1. Visit the following link and click "Code" and then "Download". Alternatively you can use clone the respository using git clone https://github.com/hamzapQA/tdl
 ```
 https://github.com/hamzapQA/tdl
 ```
-
 3. Import the project into your IDE. Using File -> Import Project. The project structure is now editable.
 4. To run the project, in the boot dashboard at the bottom left, click "Restart Server"
 
- ```
 ### Project Functionality
  
 This section provides a brief description on the functionality of the application.
 
-```
--
-```
-After the credentials have been entered, the menu will appear:
+Within the IDE, once the application is running, API endpoints can be viewed at http://localhost:8080/swagger-ui/index.html
+
+The To-Do-List web interface can be accessed at http://localhost:8080
+
+The application can also be run from the command line using the WAR file generated in the root of this directory. Download the file and save it. Open command line, navigate to the directory where the .war file is stored and type the following to run:
 
 ```
-Welcome 
+java -jar HP-TDL-0.0.1-SNAPSHOT.war
 ```
+The "homepage" at https://localhost8080 will allow you to perform CRUD functionality on the To-Do-List. It contains instructions on how to proceed. 
+
 ## Running the tests
 
 The project comes with automated tests which make use of JUnit and Mockito. Tests are organised into classes to test functionality. Test files are stored in src/test/java instead of an individual test class.
 
 ### Unit Tests 
 
-Unit tests are used to ensure code works correctly and to protect against bugs. This makes use of JUnit and tests the functionality of the  Customer, Item and Order classes as well as functionality of some of the DAO classes. 
+Unit tests are used to ensure code works correctly and to protect against bugs. This makes use of JUnit and tests the functionality of the TDL class. 
 
 Here is an example of a Unit Test:
 
 	@Test
 	public void setFirstNameTest() {
-		Customer customer = new Customer("John", "Jones");
-		customer.setFirstName("John");
-		assertTrue(customer.getFirstName().equals("John"));
+		Tdl tdl = new Tdl("Example",);
+		customer.setFirstName("Example");
+		assertTrue(customer.getFirstName().equals("Example"));
 	}
-
-To run the tests, right click on the project folder - "Run As JUnit Test"
 
 
 ### Integration Tests 
-Integration Tests make use of Mockito and aure used to test functionality of classes and controllers, domain and actions. Here is an example of a integration test to test the functionality of the create() method:
+Integration Tests make use of Mockito and aure used to test functionality of classes and controllers, domain. Here is an example of a integration test to test the functionality of the create() method:
 ```	
 		@Test
 	public void setterGetterTest() {
@@ -90,7 +87,7 @@ Integration Tests make use of Mockito and aure used to test functionality of cla
 
 ## Deployment
 
-To deploy this project on a live system, you can use the included jar file "HamzaIMS-0.0.1-SNAPSHOT-jar-with-dependencies.jar".
+To deploy this project on a live system, you can use the included war file "HP-TDL-0.0.1-SNAPSHOT.war"
 
 ## Built With
 
@@ -128,8 +125,10 @@ This project is licensed under the MIT license - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* QA Training team for amazing Java concepts, help and support.
+* QA Training team 
 * QA-Community
 * Team Trap
-* GitHub
+* Baeldung
 * W3 Schools
+* GitHub
+
