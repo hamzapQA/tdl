@@ -50,7 +50,7 @@ The application can also be run from the command line using the WAR file generat
 ```
 java -jar HP-TDL-0.0.1-SNAPSHOT.war
 ```
-The "homepage" at https://localhost8080 will allow you to perform CRUD functionality on the To-Do-List. It contains instructions on how to proceed. 
+The "homepage" will now be accessible at https://localhost8080 will allow you to perform CRUD functionality on the To-Do-List. It contains instructions on how to proceed. 
 
 ## Running the tests
 
