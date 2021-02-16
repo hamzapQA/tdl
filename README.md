@@ -23,7 +23,6 @@ In order to succesfully execute this program, there are a number of dependencies
 
 4. Bootstrap 5
 
-Git
 ```
 
 ### Installing
