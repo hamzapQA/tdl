@@ -28,7 +28,7 @@ In order to succesfully execute this program, there are a number of dependencies
 
 This is a step by step guide on how to get the project up and running on your local machine for development and testing. 
 
-1. Visit the following link and click "Code" and then "Download". Alternatively you can use clone the respository using git clone https://github.com/hamzapQA/tdl
+1. Visit the following link and click "Code" and then "Download". Alternatively you can use clone the respository using command "git clone https://github.com/hamzapQA/tdl "
 ```
 https://github.com/hamzapQA/tdl
 ```
