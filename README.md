@@ -86,6 +86,7 @@ Integration Tests make use of Mockito and aure used to test functionality of cla
 		Assertions.assertThat(toDo.getName()).isNotNull();
 		Assertions.assertThat(toDo.getTaskList()).isNull();
 ```
+To run the tests, right click on the relevant test class and click "Run As JUnit Test"
 
 ## Deployment
 
