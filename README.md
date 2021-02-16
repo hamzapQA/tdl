@@ -30,11 +30,11 @@ The .war file at the root of this diretory already contains the dependencies.
 
 This is a step by step guide on how to get the project up and running on your local machine for development and testing. 
 
-1. Visit the following link and click "Code" and then "Download". Alternatively you can use clone the respository using command "git clone https://github.com/hamzapQA/tdl "
+1. Visit the following link and click "Code" and then "Download". Alternatively you can  clone the respository using command "git clone https://github.com/hamzapQA/tdl "
 ```
 https://github.com/hamzapQA/tdl
 ```
-3. Import the project into your IDE. Using File -> Import Project. The project structure is now editable.
+3. Import the project into your IDE. Using File -> Import Project. Navigate to the folder where the repository has been cloned and click import. The project structure is now editable.
 4. To run the project, in the boot dashboard at the bottom left, click "Restart Server"
 
 ### Project Functionality
@@ -87,6 +87,7 @@ Integration Tests make use of Mockito and aure used to test functionality of cla
 		Assertions.assertThat(toDo.getTaskList()).isNull();
 ```
 To run the tests, right click on the relevant test class and click "Run As JUnit Test"
+Alternatively, right-click on the package name and select "Coverage As -> JUnit Test" to run all tests.
 
 ## Deployment
 
@@ -95,6 +96,8 @@ To deploy this project on a live system, you can use the included war file "HP-T
 ## Built With
 
 * [Maven](https://maven.apache.org/) - Dependency Management
+* Spring/Java
+* HTML/CSS/Javascript
 
 ## Versioning
 
