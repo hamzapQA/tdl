@@ -21,9 +21,11 @@ In order to succesfully execute this program, there are a number of dependencies
 
 3. Spring Boot
 
-4. Bootstrap 5
+4. Spring IDE
 
 ```
+The .war file at the root of this diretory already contains the dependencies.
+
 ### Installing
 
 This is a step by step guide on how to get the project up and running on your local machine for development and testing. 
