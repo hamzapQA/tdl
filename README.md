@@ -1,6 +1,10 @@
 # TDL - To Do List
 
-description
+This is a simple web application which interacts with an API developed in SpringBoot to create, read, update and delete items on a to-do list.
+
+The backend to this software runs on port 8080 and API information can be obtained at http://localhost:8080/swagger-ui/index.html
+
+The website can be loaded at http://localhost:8080
 
 ## Getting Started
 
@@ -11,7 +15,15 @@ These instructions will get you a copy of the project up and running on your loc
 In order to succesfully execute this program, there are a number of dependencies which will need to be installed. These are:
 
 ```
-1. 
+1. JDK 11 or over
+
+2. Maven
+
+3. Spring Boot
+
+4. Bootstrap 5
+
+Git
 ```
 
 ### Installing
