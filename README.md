@@ -29,17 +29,17 @@ In order to succesfully execute this program, there are a number of dependencies
 
 This is a step by step guide on how to get the project up and running on your local machine for development and testing. 
 
-1. Navigate to the folder in which you would like to set up the project.
+1. Visit the following link and click "Download":
 
 ```
-https://github.com/hamzapQA/tdl-back
+https://github.com/hamzapQA/tdl
 ```
 
-3. Import the project into your IDE. For Eclipse, 
-```
- a) Select File, then Import
+3. Import the project into your IDE. Using File -> Import Project. The project structure is now editable.
+4. To run the project, in the boot dashboard at the bottom left, click "Restart Server"
+
  ```
- ## Project Functionality
+### Project Functionality
  
 This section provides a brief description on the functionality of the application.
 
