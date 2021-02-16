@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Welcome to TDL</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="/css/style.css" /> <!-- link to the stylesheet -->
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html">To-Do List</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+       <li><a href="index.html">HOME</a></li>
+        <li><a href="create.html">CREATE</a></li>
+        <li><a href="read.html">READ</a></li>
+        <li><a href="update.html">UPDATE</a></li>
+        <li><a href="delete.html">DELETE</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+  <h3 class="margin">Welcome to TDL!</h3>
+    <p> This is a simple web application which interacts with an API developed in SpringBoot to create, read, update and delete items on a to-do list. </p>
+	<p> The backend to this software runs on port 8080 and API information can be obtained at http://localhost:8080/swagger-ui/index.html</p>
+	<p> This page is developed in HTML, CSS, Bootstrap and JS </p>
+</div>
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center">
+  <h3 class="margin">Getting Started</h3>
+  <p> Click "Create" on the navigation bar to add tasks to your to-do list. "Read" will allow all tasks to be displayed, "Update" will allow a task to be updated, "Delete" will allow a task to be deleted. </p>
+</div>
+
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p>Project TDL Dec20 - Hamza Pervez <a href="https://www.qa.com"> - www.qa.com</a></p> 
+</footer>
+
+</body>
+</html>
