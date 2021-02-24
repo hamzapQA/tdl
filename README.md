@@ -24,7 +24,7 @@ In order to succesfully execute this program, there are a number of dependencies
 4. Spring IDE
 
 ```
-The .war file at the root of this diretory already contains the dependencies.
+The .war file at the root of this directory already contains the dependencies.
 
 ### Installing
 
@@ -50,7 +50,7 @@ The application can also be run from the command line using the WAR file generat
 ```
 java -jar HP-TDL-0.0.1-SNAPSHOT.war
 ```
-The "homepage" will now be accessible at https://localhost8080 will allow you to perform CRUD functionality on the To-Do-List. It contains instructions on how to proceed. 
+The "homepage" will now be accessible at https://localhost:8080 will allow you to perform CRUD functionality on the To-Do-List. It contains instructions on how to proceed. 
 
 ## Running the tests
 
